@@ -1,0 +1,19 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+### Menü Öðesi Ekle (POST)
+POST https://localhost:7046/api/menuitems
+Content-Type: application/json
+
+{
+  "name": "Hamburger",
+  "price": 120,
+  "description": "Lezzetli hamburger",
+  "photoPath": "/img/hamburger.jpg",
+  "calories": 800,
+  "isVegan": false,
+  "allergens": "Gluten"
+}
+
+###
+
+### Menüleri Listele (GET)
+GET https://localhost:7046/api/menuitems
